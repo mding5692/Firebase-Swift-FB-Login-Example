@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import Firebase
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setUpSubViews()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -19,7 +21,21 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    // Sets up all login buttons etc.
+    func setUpSubViews() {
+        // Can try other subview setting up here
+    }
+    
+    // Adds Login button to the screen
+    func setUpLoginButton() {
+        let facebookLoginButton:UIButton = UIButton()
+    }
+    
+    // Adds facebook login function
+    func loginViaFacebook() {
+        
+    }
 
 }
 

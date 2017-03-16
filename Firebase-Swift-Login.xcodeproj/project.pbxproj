@@ -10,12 +10,14 @@
 		060EE56874BFE04971FBD1FD /* Pods_Firebase_Swift_LoginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F15684A8A8D46D9788C9ACA /* Pods_Firebase_Swift_LoginUITests.framework */; };
 		671837B13910159E9BF7C3D2 /* Pods_Firebase_Swift_LoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F4DB9E32A25A6DD3F7CB02 /* Pods_Firebase_Swift_LoginTests.framework */; };
 		AA486D931E7B24BA000C6D17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA486D921E7B24BA000C6D17 /* AppDelegate.swift */; };
-		AA486D951E7B24BA000C6D17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA486D941E7B24BA000C6D17 /* ViewController.swift */; };
+		AA486D951E7B24BA000C6D17 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA486D941E7B24BA000C6D17 /* LoginViewController.swift */; };
 		AA486D981E7B24BA000C6D17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA486D961E7B24BA000C6D17 /* Main.storyboard */; };
 		AA486D9A1E7B24BA000C6D17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA486D991E7B24BA000C6D17 /* Assets.xcassets */; };
 		AA486D9D1E7B24BA000C6D17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA486D9B1E7B24BA000C6D17 /* LaunchScreen.storyboard */; };
 		AA486DA81E7B24BA000C6D17 /* Firebase_Swift_LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA486DA71E7B24BA000C6D17 /* Firebase_Swift_LoginTests.swift */; };
 		AA486DB31E7B24BA000C6D17 /* Firebase_Swift_LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA486DB21E7B24BA000C6D17 /* Firebase_Swift_LoginUITests.swift */; };
+		AA486DC11E7B2CD2000C6D17 /* LoggedInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA486DC01E7B2CD2000C6D17 /* LoggedInView.swift */; };
+		AA486DC51E7B2D18000C6D17 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA486DC41E7B2D18000C6D17 /* User.swift */; };
 		E9A85EAC55140D2C48C76F09 /* Pods_Firebase_Swift_Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C698FDE5D1392326895A247A /* Pods_Firebase_Swift_Login.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +46,7 @@
 		A5813BEE4CED2F465AE518CB /* Pods-Firebase-Swift-LoginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase-Swift-LoginTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Firebase-Swift-LoginTests/Pods-Firebase-Swift-LoginTests.release.xcconfig"; sourceTree = "<group>"; };
 		AA486D8F1E7B24BA000C6D17 /* Firebase-Swift-Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firebase-Swift-Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA486D921E7B24BA000C6D17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA486D941E7B24BA000C6D17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA486D941E7B24BA000C6D17 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AA486D971E7B24BA000C6D17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA486D991E7B24BA000C6D17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA486D9C1E7B24BA000C6D17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +57,8 @@
 		AA486DAE1E7B24BA000C6D17 /* Firebase-Swift-LoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Firebase-Swift-LoginUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA486DB21E7B24BA000C6D17 /* Firebase_Swift_LoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase_Swift_LoginUITests.swift; sourceTree = "<group>"; };
 		AA486DB41E7B24BA000C6D17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA486DC01E7B2CD2000C6D17 /* LoggedInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedInView.swift; sourceTree = "<group>"; };
+		AA486DC41E7B2D18000C6D17 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C267B0A4C42463495F8515F1 /* Pods-Firebase-Swift-LoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase-Swift-LoginTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Firebase-Swift-LoginTests/Pods-Firebase-Swift-LoginTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C698FDE5D1392326895A247A /* Pods_Firebase_Swift_Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase_Swift_Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F4DB9E32A25A6DD3F7CB02 /* Pods_Firebase_Swift_LoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase_Swift_LoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,8 +131,10 @@
 		AA486D911E7B24BA000C6D17 /* Firebase-Swift-Login */ = {
 			isa = PBXGroup;
 			children = (
+				AA486DC31E7B2CE2000C6D17 /* View */,
+				AA486DC21E7B2CDC000C6D17 /* Model */,
 				AA486D921E7B24BA000C6D17 /* AppDelegate.swift */,
-				AA486D941E7B24BA000C6D17 /* ViewController.swift */,
+				AA486D941E7B24BA000C6D17 /* LoginViewController.swift */,
 				AA486D961E7B24BA000C6D17 /* Main.storyboard */,
 				AA486D991E7B24BA000C6D17 /* Assets.xcassets */,
 				AA486D9B1E7B24BA000C6D17 /* LaunchScreen.storyboard */,
@@ -153,6 +159,22 @@
 				AA486DB41E7B24BA000C6D17 /* Info.plist */,
 			);
 			path = "Firebase-Swift-LoginUITests";
+			sourceTree = "<group>";
+		};
+		AA486DC21E7B2CDC000C6D17 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA486DC41E7B2D18000C6D17 /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AA486DC31E7B2CE2000C6D17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA486DC01E7B2CD2000C6D17 /* LoggedInView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		D6D1413E1211229921CA814D /* Frameworks */ = {
@@ -449,7 +471,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA486D951E7B24BA000C6D17 /* ViewController.swift in Sources */,
+				AA486DC51E7B2D18000C6D17 /* User.swift in Sources */,
+				AA486DC11E7B2CD2000C6D17 /* LoggedInView.swift in Sources */,
+				AA486D951E7B24BA000C6D17 /* LoginViewController.swift in Sources */,
 				AA486D931E7B24BA000C6D17 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -707,6 +731,7 @@
 				AA486DB91E7B24BA000C6D17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA486DBA1E7B24BA000C6D17 /* Build configuration list for PBXNativeTarget "Firebase-Swift-LoginTests" */ = {
 			isa = XCConfigurationList;
@@ -715,6 +740,7 @@
 				AA486DBC1E7B24BA000C6D17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA486DBD1E7B24BA000C6D17 /* Build configuration list for PBXNativeTarget "Firebase-Swift-LoginUITests" */ = {
 			isa = XCConfigurationList;
@@ -723,6 +749,7 @@
 				AA486DBF1E7B24BA000C6D17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
