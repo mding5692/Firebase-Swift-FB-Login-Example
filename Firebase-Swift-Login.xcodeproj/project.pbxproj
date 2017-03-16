@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA486D931E7B24BA000C6D17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA486D921E7B24BA000C6D17 /* AppDelegate.swift */; };
+		AA486D951E7B24BA000C6D17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA486D941E7B24BA000C6D17 /* ViewController.swift */; };
+		AA486D981E7B24BA000C6D17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA486D961E7B24BA000C6D17 /* Main.storyboard */; };
+		AA486D9A1E7B24BA000C6D17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA486D991E7B24BA000C6D17 /* Assets.xcassets */; };
+		AA486D9D1E7B24BA000C6D17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA486D9B1E7B24BA000C6D17 /* LaunchScreen.storyboard */; };
+		AA486DA81E7B24BA000C6D17 /* Firebase_Swift_LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA486DA71E7B24BA000C6D17 /* Firebase_Swift_LoginTests.swift */; };
+		AA486DB31E7B24BA000C6D17 /* Firebase_Swift_LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA486DB21E7B24BA000C6D17 /* Firebase_Swift_LoginUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA486DA41E7B24BA000C6D17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA486D871E7B24BA000C6D17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA486D8E1E7B24BA000C6D17;
+			remoteInfo = "Firebase-Swift-Login";
+		};
+		AA486DAF1E7B24BA000C6D17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA486D871E7B24BA000C6D17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA486D8E1E7B24BA000C6D17;
+			remoteInfo = "Firebase-Swift-Login";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA486D8F1E7B24BA000C6D17 /* Firebase-Swift-Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firebase-Swift-Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA486D921E7B24BA000C6D17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA486D941E7B24BA000C6D17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA486D971E7B24BA000C6D17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA486D991E7B24BA000C6D17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA486D9C1E7B24BA000C6D17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA486D9E1E7B24BA000C6D17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA486DA31E7B24BA000C6D17 /* Firebase-Swift-LoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Firebase-Swift-LoginTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA486DA71E7B24BA000C6D17 /* Firebase_Swift_LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase_Swift_LoginTests.swift; sourceTree = "<group>"; };
+		AA486DA91E7B24BA000C6D17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA486DAE1E7B24BA000C6D17 /* Firebase-Swift-LoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Firebase-Swift-LoginUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA486DB21E7B24BA000C6D17 /* Firebase_Swift_LoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase_Swift_LoginUITests.swift; sourceTree = "<group>"; };
+		AA486DB41E7B24BA000C6D17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA486D8C1E7B24BA000C6D17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA486DA01E7B24BA000C6D17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA486DAB1E7B24BA000C6D17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA486D861E7B24BA000C6D17 = {
+			isa = PBXGroup;
+			children = (
+				AA486D911E7B24BA000C6D17 /* Firebase-Swift-Login */,
+				AA486DA61E7B24BA000C6D17 /* Firebase-Swift-LoginTests */,
+				AA486DB11E7B24BA000C6D17 /* Firebase-Swift-LoginUITests */,
+				AA486D901E7B24BA000C6D17 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA486D901E7B24BA000C6D17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA486D8F1E7B24BA000C6D17 /* Firebase-Swift-Login.app */,
+				AA486DA31E7B24BA000C6D17 /* Firebase-Swift-LoginTests.xctest */,
+				AA486DAE1E7B24BA000C6D17 /* Firebase-Swift-LoginUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA486D911E7B24BA000C6D17 /* Firebase-Swift-Login */ = {
+			isa = PBXGroup;
+			children = (
+				AA486D921E7B24BA000C6D17 /* AppDelegate.swift */,
+				AA486D941E7B24BA000C6D17 /* ViewController.swift */,
+				AA486D961E7B24BA000C6D17 /* Main.storyboard */,
+				AA486D991E7B24BA000C6D17 /* Assets.xcassets */,
+				AA486D9B1E7B24BA000C6D17 /* LaunchScreen.storyboard */,
+				AA486D9E1E7B24BA000C6D17 /* Info.plist */,
+			);
+			path = "Firebase-Swift-Login";
+			sourceTree = "<group>";
+		};
+		AA486DA61E7B24BA000C6D17 /* Firebase-Swift-LoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA486DA71E7B24BA000C6D17 /* Firebase_Swift_LoginTests.swift */,
+				AA486DA91E7B24BA000C6D17 /* Info.plist */,
+			);
+			path = "Firebase-Swift-LoginTests";
+			sourceTree = "<group>";
+		};
+		AA486DB11E7B24BA000C6D17 /* Firebase-Swift-LoginUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA486DB21E7B24BA000C6D17 /* Firebase_Swift_LoginUITests.swift */,
+				AA486DB41E7B24BA000C6D17 /* Info.plist */,
+			);
+			path = "Firebase-Swift-LoginUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA486D8E1E7B24BA000C6D17 /* Firebase-Swift-Login */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA486DB71E7B24BA000C6D17 /* Build configuration list for PBXNativeTarget "Firebase-Swift-Login" */;
+			buildPhases = (
+				AA486D8B1E7B24BA000C6D17 /* Sources */,
+				AA486D8C1E7B24BA000C6D17 /* Frameworks */,
+				AA486D8D1E7B24BA000C6D17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Firebase-Swift-Login";
+			productName = "Firebase-Swift-Login";
+			productReference = AA486D8F1E7B24BA000C6D17 /* Firebase-Swift-Login.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA486DA21E7B24BA000C6D17 /* Firebase-Swift-LoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA486DBA1E7B24BA000C6D17 /* Build configuration list for PBXNativeTarget "Firebase-Swift-LoginTests" */;
+			buildPhases = (
+				AA486D9F1E7B24BA000C6D17 /* Sources */,
+				AA486DA01E7B24BA000C6D17 /* Frameworks */,
+				AA486DA11E7B24BA000C6D17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA486DA51E7B24BA000C6D17 /* PBXTargetDependency */,
+			);
+			name = "Firebase-Swift-LoginTests";
+			productName = "Firebase-Swift-LoginTests";
+			productReference = AA486DA31E7B24BA000C6D17 /* Firebase-Swift-LoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA486DAD1E7B24BA000C6D17 /* Firebase-Swift-LoginUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA486DBD1E7B24BA000C6D17 /* Build configuration list for PBXNativeTarget "Firebase-Swift-LoginUITests" */;
+			buildPhases = (
+				AA486DAA1E7B24BA000C6D17 /* Sources */,
+				AA486DAB1E7B24BA000C6D17 /* Frameworks */,
+				AA486DAC1E7B24BA000C6D17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA486DB01E7B24BA000C6D17 /* PBXTargetDependency */,
+			);
+			name = "Firebase-Swift-LoginUITests";
+			productName = "Firebase-Swift-LoginUITests";
+			productReference = AA486DAE1E7B24BA000C6D17 /* Firebase-Swift-LoginUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA486D871E7B24BA000C6D17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Michael Ding";
+				TargetAttributes = {
+					AA486D8E1E7B24BA000C6D17 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = HU5XKW75HS;
+						ProvisioningStyle = Automatic;
+					};
+					AA486DA21E7B24BA000C6D17 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = HU5XKW75HS;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AA486D8E1E7B24BA000C6D17;
+					};
+					AA486DAD1E7B24BA000C6D17 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = HU5XKW75HS;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AA486D8E1E7B24BA000C6D17;
+					};
+				};
+			};
+			buildConfigurationList = AA486D8A1E7B24BA000C6D17 /* Build configuration list for PBXProject "Firebase-Swift-Login" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA486D861E7B24BA000C6D17;
+			productRefGroup = AA486D901E7B24BA000C6D17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA486D8E1E7B24BA000C6D17 /* Firebase-Swift-Login */,
+				AA486DA21E7B24BA000C6D17 /* Firebase-Swift-LoginTests */,
+				AA486DAD1E7B24BA000C6D17 /* Firebase-Swift-LoginUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA486D8D1E7B24BA000C6D17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA486D9D1E7B24BA000C6D17 /* LaunchScreen.storyboard in Resources */,
+				AA486D9A1E7B24BA000C6D17 /* Assets.xcassets in Resources */,
+				AA486D981E7B24BA000C6D17 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA486DA11E7B24BA000C6D17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA486DAC1E7B24BA000C6D17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA486D8B1E7B24BA000C6D17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA486D951E7B24BA000C6D17 /* ViewController.swift in Sources */,
+				AA486D931E7B24BA000C6D17 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA486D9F1E7B24BA000C6D17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA486DA81E7B24BA000C6D17 /* Firebase_Swift_LoginTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA486DAA1E7B24BA000C6D17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA486DB31E7B24BA000C6D17 /* Firebase_Swift_LoginUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA486DA51E7B24BA000C6D17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA486D8E1E7B24BA000C6D17 /* Firebase-Swift-Login */;
+			targetProxy = AA486DA41E7B24BA000C6D17 /* PBXContainerItemProxy */;
+		};
+		AA486DB01E7B24BA000C6D17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA486D8E1E7B24BA000C6D17 /* Firebase-Swift-Login */;
+			targetProxy = AA486DAF1E7B24BA000C6D17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA486D961E7B24BA000C6D17 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA486D971E7B24BA000C6D17 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA486D9B1E7B24BA000C6D17 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA486D9C1E7B24BA000C6D17 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA486DB51E7B24BA000C6D17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA486DB61E7B24BA000C6D17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA486DB81E7B24BA000C6D17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HU5XKW75HS;
+				INFOPLIST_FILE = "Firebase-Swift-Login/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MDing.Firebase-Swift-Login";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AA486DB91E7B24BA000C6D17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HU5XKW75HS;
+				INFOPLIST_FILE = "Firebase-Swift-Login/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MDing.Firebase-Swift-Login";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AA486DBB1E7B24BA000C6D17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HU5XKW75HS;
+				INFOPLIST_FILE = "Firebase-Swift-LoginTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MDing.Firebase-Swift-LoginTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Firebase-Swift-Login.app/Firebase-Swift-Login";
+			};
+			name = Debug;
+		};
+		AA486DBC1E7B24BA000C6D17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HU5XKW75HS;
+				INFOPLIST_FILE = "Firebase-Swift-LoginTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MDing.Firebase-Swift-LoginTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Firebase-Swift-Login.app/Firebase-Swift-Login";
+			};
+			name = Release;
+		};
+		AA486DBE1E7B24BA000C6D17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = HU5XKW75HS;
+				INFOPLIST_FILE = "Firebase-Swift-LoginUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MDing.Firebase-Swift-LoginUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Firebase-Swift-Login";
+			};
+			name = Debug;
+		};
+		AA486DBF1E7B24BA000C6D17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = HU5XKW75HS;
+				INFOPLIST_FILE = "Firebase-Swift-LoginUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MDing.Firebase-Swift-LoginUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Firebase-Swift-Login";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA486D8A1E7B24BA000C6D17 /* Build configuration list for PBXProject "Firebase-Swift-Login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA486DB51E7B24BA000C6D17 /* Debug */,
+				AA486DB61E7B24BA000C6D17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA486DB71E7B24BA000C6D17 /* Build configuration list for PBXNativeTarget "Firebase-Swift-Login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA486DB81E7B24BA000C6D17 /* Debug */,
+				AA486DB91E7B24BA000C6D17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AA486DBA1E7B24BA000C6D17 /* Build configuration list for PBXNativeTarget "Firebase-Swift-LoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA486DBB1E7B24BA000C6D17 /* Debug */,
+				AA486DBC1E7B24BA000C6D17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AA486DBD1E7B24BA000C6D17 /* Build configuration list for PBXNativeTarget "Firebase-Swift-LoginUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA486DBE1E7B24BA000C6D17 /* Debug */,
+				AA486DBF1E7B24BA000C6D17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA486D871E7B24BA000C6D17 /* Project object */;
+}
