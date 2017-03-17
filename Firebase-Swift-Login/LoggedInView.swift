@@ -10,10 +10,11 @@ import Foundation
 import UIKit
 
 // Shows result after successfully logging in
-class LoggedInView : UIView {
+class LoggedInView : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     override func didReceiveMemoryWarning() {
