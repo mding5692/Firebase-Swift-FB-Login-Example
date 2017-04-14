@@ -19,6 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FIRApp.configure()
         
+        // Start at loginView for now
+        let loginView:LoginViewController = LoginViewController()
+        self.window?.rootViewController = loginView
+        
         // Override point for customization after application launch.
         return true
     }
