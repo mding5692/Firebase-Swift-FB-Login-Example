@@ -9,6 +9,7 @@
 import Foundation
 import FacebookCore
 import FacebookLogin
+import Firebase
 
 // Controller for grabbing and saving user data
 class LoginHandler {
@@ -34,7 +35,7 @@ class LoginHandler {
         connection.start()
     }
     
-    // Saves user data to currUser model class
+    // Saves user data to currUser model class and Firebase
     public func storeUserData(userData:[String:Any]) {
         // Checks to see if valid data
         guard userData["id"] != nil, let userID = userData["id"] as? String, !userID.isEmpty else {
@@ -47,9 +48,13 @@ class LoginHandler {
             return
         }
         
-        // Stores data
-        currUser.userID = userData["id"] as! String
-        currUser.name = userData["name"] as! String
+        // Stores data locally in currUser
+        currUser.userID = userID
+        currUser.name = userName
+        
+        // Store data into Firebase
+        let ref = FIRDatabase.database().reference().child("users").child(userID)
+        ref.setValue(userName)
     }
 }
 var loginHandler:LoginHandler = LoginHandler()

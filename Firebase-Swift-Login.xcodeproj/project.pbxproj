@@ -19,6 +19,7 @@
 		AA745A731EA14BD100B5EDE6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA745A721EA14BD100B5EDE6 /* User.swift */; };
 		AA745A751EA14BDA00B5EDE6 /* LoggedInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA745A741EA14BDA00B5EDE6 /* LoggedInView.swift */; };
 		AA745A771EA14BE200B5EDE6 /* LoginHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA745A761EA14BE200B5EDE6 /* LoginHandler.swift */; };
+		AA745A791EA154C400B5EDE6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA745A781EA154C400B5EDE6 /* GoogleService-Info.plist */; };
 		E9A85EAC55140D2C48C76F09 /* Pods_Firebase_Swift_Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C698FDE5D1392326895A247A /* Pods_Firebase_Swift_Login.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		AA745A721EA14BD100B5EDE6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User.swift; sourceTree = "<group>"; };
 		AA745A741EA14BDA00B5EDE6 /* LoggedInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoggedInView.swift; path = View/LoggedInView.swift; sourceTree = "<group>"; };
 		AA745A761EA14BE200B5EDE6 /* LoginHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginHandler.swift; path = Controller/LoginHandler.swift; sourceTree = "<group>"; };
+		AA745A781EA154C400B5EDE6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C267B0A4C42463495F8515F1 /* Pods-Firebase-Swift-LoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase-Swift-LoginTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Firebase-Swift-LoginTests/Pods-Firebase-Swift-LoginTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C698FDE5D1392326895A247A /* Pods_Firebase_Swift_Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase_Swift_Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F4DB9E32A25A6DD3F7CB02 /* Pods_Firebase_Swift_LoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase_Swift_LoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +135,7 @@
 		AA486D911E7B24BA000C6D17 /* Firebase-Swift-Login */ = {
 			isa = PBXGroup;
 			children = (
+				AA745A781EA154C400B5EDE6 /* GoogleService-Info.plist */,
 				AA745A6F1EA141A400B5EDE6 /* Controller */,
 				AA486DC31E7B2CE2000C6D17 /* View */,
 				AA486DC21E7B2CDC000C6D17 /* Model */,
@@ -318,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA486D9D1E7B24BA000C6D17 /* LaunchScreen.storyboard in Resources */,
+				AA745A791EA154C400B5EDE6 /* GoogleService-Info.plist in Resources */,
 				AA486D9A1E7B24BA000C6D17 /* Assets.xcassets in Resources */,
 				AA486D981E7B24BA000C6D17 /* Main.storyboard in Resources */,
 			);
