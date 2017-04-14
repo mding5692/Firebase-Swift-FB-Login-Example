@@ -10,6 +10,7 @@ target 'Firebase-Swift-Login' do
   pod 'FacebookLogin'
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
   target 'Firebase-Swift-LoginTests' do
     inherit! :search_paths
