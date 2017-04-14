@@ -18,6 +18,7 @@
 		AA486DB31E7B24BA000C6D17 /* Firebase_Swift_LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA486DB21E7B24BA000C6D17 /* Firebase_Swift_LoginUITests.swift */; };
 		AA486DC11E7B2CD2000C6D17 /* LoggedInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA486DC01E7B2CD2000C6D17 /* LoggedInView.swift */; };
 		AA486DC51E7B2D18000C6D17 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA486DC41E7B2D18000C6D17 /* User.swift */; };
+		AA745A711EA141BB00B5EDE6 /* LoginHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA745A701EA141BB00B5EDE6 /* LoginHandler.swift */; };
 		E9A85EAC55140D2C48C76F09 /* Pods_Firebase_Swift_Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C698FDE5D1392326895A247A /* Pods_Firebase_Swift_Login.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		AA486DB41E7B24BA000C6D17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA486DC01E7B2CD2000C6D17 /* LoggedInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedInView.swift; sourceTree = "<group>"; };
 		AA486DC41E7B2D18000C6D17 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AA745A701EA141BB00B5EDE6 /* LoginHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginHandler.swift; sourceTree = "<group>"; };
 		C267B0A4C42463495F8515F1 /* Pods-Firebase-Swift-LoginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase-Swift-LoginTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Firebase-Swift-LoginTests/Pods-Firebase-Swift-LoginTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C698FDE5D1392326895A247A /* Pods_Firebase_Swift_Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase_Swift_Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F4DB9E32A25A6DD3F7CB02 /* Pods_Firebase_Swift_LoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase_Swift_LoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +133,7 @@
 		AA486D911E7B24BA000C6D17 /* Firebase-Swift-Login */ = {
 			isa = PBXGroup;
 			children = (
+				AA745A6F1EA141A400B5EDE6 /* Controller */,
 				AA486DC31E7B2CE2000C6D17 /* View */,
 				AA486DC21E7B2CDC000C6D17 /* Model */,
 				AA486D921E7B24BA000C6D17 /* AppDelegate.swift */,
@@ -175,6 +178,14 @@
 				AA486DC01E7B2CD2000C6D17 /* LoggedInView.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		AA745A6F1EA141A400B5EDE6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AA745A701EA141BB00B5EDE6 /* LoginHandler.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		D6D1413E1211229921CA814D /* Frameworks */ = {
@@ -475,6 +486,7 @@
 				AA486DC11E7B2CD2000C6D17 /* LoggedInView.swift in Sources */,
 				AA486D951E7B24BA000C6D17 /* LoginViewController.swift in Sources */,
 				AA486D931E7B24BA000C6D17 /* AppDelegate.swift in Sources */,
+				AA745A711EA141BB00B5EDE6 /* LoginHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

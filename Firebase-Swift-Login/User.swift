@@ -11,6 +11,9 @@ import Foundation
 // Used to save user information from Facebook
 class User {
     // List of attributes publically accessible via Facebook
+    public var userID: String = String()
+    public var name: String = String()
+    public var email: String = String()
     
     init() {
         

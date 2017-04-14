@@ -8,9 +8,14 @@
 
 import UIKit
 import Firebase
+import FacebookCore
+import FacebookLogin
+
 
 class LoginViewController: UIViewController {
 
+    // Choose what you want to grab, default right now is publicly available data
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpSubViews()
@@ -25,16 +30,39 @@ class LoginViewController: UIViewController {
     // Sets up all login buttons etc.
     func setUpSubViews() {
         // Can try other subview setting up here
+        setUpLoginButton()
     }
     
     // Adds Login button to the screen
     func setUpLoginButton() {
-        let facebookLoginButton:UIButton = UIButton()
+        // Custom Login Button initialization
+        let loginButton = UIButton()
+        loginButton.backgroundColor = UIColor.darkGray
+        loginButton.frame = CGRect(x: 0, y: 0, width: 180, height: 40)
+        loginButton.center = view.center;
+        loginButton.setTitle("Login via Facebook", for: .normal)
+
+        // Handles login
+        loginButton.addTarget(self, action: #selector(self.loginViaFacebook), for: .touchUpInside)
+
+        // Adds it to screen
+        self.view.addSubview(loginButton)
     }
     
     // Adds facebook login function
     func loginViaFacebook() {
-        
+        let loginManager = LoginManager()
+        loginManager.logIn([ .publicProfile ], viewController: self) { loginResult in
+            switch loginResult {
+            case .failed(let error):
+                print(error)
+            case .cancelled:
+                print("User cancelled login.")
+            case .success( _, _, let accessToken):
+                print("Logged in!")
+                loginHandler.grabUserData(accessToken: accessToken.authenticationToken)
+            }
+        }
     }
 
 }
