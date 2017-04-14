@@ -13,13 +13,10 @@ import FacebookLogin
 
 
 class LoginViewController: UIViewController {
-
-    // Choose what you want to grab, default right now is publicly available data
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpSubViews()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,7 +37,7 @@ class LoginViewController: UIViewController {
         loginButton.backgroundColor = UIColor.darkGray
         loginButton.frame = CGRect(x: 0, y: 0, width: 180, height: 40)
         loginButton.center = view.center;
-        loginButton.setTitle("Login via Facebook", for: .normal)
+        loginButton.setTitle("Login via FB", for: .normal)
 
         // Handles login
         loginButton.addTarget(self, action: #selector(self.loginViaFacebook), for: .touchUpInside)
