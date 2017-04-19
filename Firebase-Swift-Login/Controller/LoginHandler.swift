@@ -19,7 +19,7 @@ class LoginHandler {
     }
     
     // Grabs user data from facebook
-    public func grabUserData(accessToken: String) {
+    public func grabUserData(accessToken: String, completionHandler: ()) {
         let connection = GraphRequestConnection()
         let params = ["fields":"id,name"]
         connection.add(GraphRequest(graphPath: "/me", parameters: params, accessToken: AccessToken.current, httpMethod: .GET, apiVersion: .defaultVersion)) { httpResponse, result in
@@ -28,6 +28,7 @@ class LoginHandler {
                 print("Graph Request Succeeded: \(response)")
                 let userData:[String:Any]? = response.dictionaryValue
                 self.storeUserData(userData: userData!)
+                completionHandler
             case .failed(let error):
                 print("Graph Request Failed: \(error)")
             }
@@ -38,13 +39,8 @@ class LoginHandler {
     // Saves user data to currUser model class and Firebase
     public func storeUserData(userData:[String:Any]) {
         // Checks to see if valid data
-        guard userData["id"] != nil, let userID = userData["id"] as? String, !userID.isEmpty else {
-            print("User id is not there")
-            return
-        }
-        
-        guard userData["name"] != nil, let userName = userData["name"] as? String, !userName.isEmpty else {
-            print("Name not available")
+        guard let userID = userData["id"] as? String, !userID.isEmpty, let userName = userData["name"] as? String, !userName.isEmpty else {
+            print("User id or name is not there")
             return
         }
         
@@ -55,6 +51,8 @@ class LoginHandler {
         // Store data into Firebase
         let ref = FIRDatabase.database().reference().child("users").child(userID)
         ref.setValue(userName)
+        
+        // Notifies to update the label
+        notificationCenter.post(name: notifyToUpdateLabel, object: nil)
     }
 }
-var loginHandler:LoginHandler = LoginHandler()

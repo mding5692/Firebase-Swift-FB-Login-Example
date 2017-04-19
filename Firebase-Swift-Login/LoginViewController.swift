@@ -57,9 +57,16 @@ class LoginViewController: UIViewController {
                 print("User cancelled login.")
             case .success( _, _, let accessToken):
                 print("Logged in!")
-                loginHandler.grabUserData(accessToken: accessToken.authenticationToken)
+                // Moves to loggedInView when done and successful after grabbing user data
+                loginHandler.grabUserData(accessToken: accessToken.authenticationToken, completionHandler: self.redirectToLoggedInView())
             }
         }
+    }
+    
+    // Redirect to loggedInView after getting user info from facebook
+    func redirectToLoggedInView() {
+        let loggedInView = LoggedInView()
+        self.present(loggedInView, animated: false, completion: nil)
     }
 
 }

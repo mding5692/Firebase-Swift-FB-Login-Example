@@ -20,5 +20,3 @@ class User {
     }
     
 }
-// Creates a global variable for a User object that can be used to save Facebook data
-var currUser:User = User()

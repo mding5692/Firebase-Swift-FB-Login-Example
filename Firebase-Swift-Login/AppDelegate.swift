@@ -9,8 +9,13 @@
 import UIKit
 import Firebase
 import FacebookCore
-import FacebookLogin
+import FBSDKLoginKit
 
+// Creates a global variable for a User and LoginHandler object that can be used to pull and save Facebook data
+let currUser = User()
+let loginHandler = LoginHandler()
+let notificationCenter = NotificationCenter.default
+let notifyToUpdateLabel: Notification.Name = Notification.Name("updateLabel")
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FIRApp.configure()
         
         // Override point for customization after application launch.
-        let fbLaunch = FBSDKApplicationDelegate.sharedInstance.application(application, didFinishLaunchingWithOptions: launchOptions)
+        let fbLaunch = FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
         // Start at loginView for now
         let loginView:LoginViewController = LoginViewController()
