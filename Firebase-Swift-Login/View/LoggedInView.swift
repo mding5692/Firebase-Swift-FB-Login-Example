@@ -12,28 +12,32 @@ import UIKit
 // Shows result after successfully logging in
 class LoggedInView : UIViewController {
     
+    // For displaying results, uses a initializing closure
+    let userInfoLabel:UILabel = {
+        let label = UILabel()
+        label.textColor = UIColor.blue
+        label.frame = CGRect(x: 0, y: 0, width: 300, height: 40)
+        label.text = "Loading user info..."
+        return label
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.white
         // Setting up where our results appear
-        let userInfoLabel = UILabel()
-        userInfoLabel.frame = CGRect(x: 0, y: 0, width: 180, height: 40)
-        userInfoLabel.center = view.center
-        userInfoLabel.text = "Loading user data..."
-        
-        // Uses threading to load user data stored in currUser model class
-        DispatchQueue.global(qos: .userInteractive).async {
-            userInfoLabel.text = "FB User ID for this app: " + currUser.userID + "\n" + "Name: " + currUser.name
-        
-            DispatchQueue.main.async {
-                // Reloads UILabel
-                userInfoLabel.setNeedsDisplay()
-            }
-        }
+        self.userInfoLabel.center = view.center
+        self.view.addSubview(self.userInfoLabel)
+        notificationCenter.addObserver(self, selector: #selector(updateLabel), name: notifyToUpdateLabel, object: nil)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // Updates our current result label
+    func updateLabel() {
+        self.userInfoLabel.text = "ID: \(currUser.userID) & Name: \(currUser.name)"
     }
     
 }
